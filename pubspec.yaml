@@ -1,0 +1,98 @@
+name: poc_bug_open_camera
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.4.2+100
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  get: ^4.6.5
+  get_storage: ^2.0.3
+  logger: ^2.0.2+1
+  equatable: ^2.0.3
+  mask_text_input_formatter: ^2.3.0
+  timer_count_down: ^2.2.1
+  location: ^5.0.3
+  permission_handler: ^10.0.0
+  money2: ^4.0.0
+  share_plus: ^7.2.1
+  signature: ^5.0.1
+  rxdart: ^0.27.7
+  flutter_launcher_icons: ^0.13.1
+  package_info_plus: ^5.0.1
+  url_launcher: ^6.1.11
+  firebase_crashlytics: ^3.4.9
+  firebase_core: ^2.24.2
+  device_info_plus: ^9.1.1
+  intl: ^0.18.1
+  json_annotation: ^4.5.0
+  path_provider: ^2.0.11
+  flutter_file_saver: ^0.6.1+1
+  file: ^7.0.0
+  cross_file: ^0.3.3+4
+  firebase_core_platform_interface: ^5.0.0
+
+  brscan_flutter:
+    git:
+      url: https://brscan-code-magic:bqyhlvbfhruusgtrfjkewyfqqj37p3yndznx7bn456sgcfo2bcqq@dev.azure.com/CodeNApp/Code%20n%20App/_git/brscan-flutter
+      ref: refactor
+
+  unico_check:
+    git:
+      url: https://unico-code-magic:bqyhlvbfhruusgtrfjkewyfqqj37p3yndznx7bn456sgcfo2bcqq@dev.azure.com/CodeNApp/Code%20n%20App/_git/unico-plugin
+      ref: documents
+
+  pdfx:
+    git:
+      url: 'https://github.com/ScerIO/packages.flutter'
+      ref: 'd637108a2a6e3e97a70304f00f1eda9511fb4f92'
+      path: packages/pdfx
+
+dev_dependencies:
+  # flutter_test:
+  #   sdk: flutter
+
+  flutter_lints: ^3.0.1
+  build_runner: ^2.1.11
+  json_serializable: ^6.2.0
+  faker: ^2.0.0
+  mocktail: ^1.0.2
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/launcher/icon.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
