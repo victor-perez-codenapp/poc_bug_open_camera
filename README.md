@@ -1,16 +1,20 @@
-# poc_bug_open_camera
+# Instruções para Build do Projeto
 
-A new Flutter project.
+Para construir o projeto, siga os seguintes passos no terminal:
 
-## Getting Started
+**Observação:** É necessário ter FVM, Flutter e Dart configurados no ambiente da máquina.
 
-This project is a starting point for a Flutter application.
+1. `fvm use 3.16.6`
+2. `fvm flutter pub get`
+3. `fvm flutter run`
 
-A few resources to get you started if this is your first Flutter project:
+## Entendendo a POC:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. **Botão Portrait:** Coloca a tela em modo retrato.
+2. **Botão Landscape:** Coloca a tela em modo paisagem.
+3. **Botão Validação Selfie:** Inicializa e abre o SDK da Unico para validação facial por selfie.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Algumas Observações:
+
+1. Os callbacks geram snackbars personalizadas e loggers para facilitar a depuração.
+2. Para simular o erro `onErrorUnico` durante o carregamento do SDK, na tela de loading screen (tela branca com um círculo no meio), é necessário ficar alterando a orientação do dispositivo com o objetivo de forçar a mudança de orientação de tela enquanto carrega. Como o aplicativo está bem leve nessa versão, é mais difícil simular o erro, mas ele pode ocorrer.
