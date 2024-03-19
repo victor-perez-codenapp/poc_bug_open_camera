@@ -57,15 +57,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
-  brscan_flutter:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: refactor
-      resolved-ref: dc6de5b76f6550d04d2551edf2e9c70fb4f6d631
-      url: "https://brscan-code-magic:bqyhlvbfhruusgtrfjkewyfqqj37p3yndznx7bn456sgcfo2bcqq@dev.azure.com/CodeNApp/Code%20n%20App/_git/brscan-flutter"
-    source: git
-    version: "0.0.1"
   build:
     dependency: transitive
     description:
@@ -1023,12 +1014,11 @@ packages:
   unico_check:
     dependency: "direct main"
     description:
-      path: "."
-      ref: documents
-      resolved-ref: "7dc313681eef45babdcb0afcd8389f4ade6538ad"
-      url: "https://unico-code-magic:bqyhlvbfhruusgtrfjkewyfqqj37p3yndznx7bn456sgcfo2bcqq@dev.azure.com/CodeNApp/Code%20n%20App/_git/unico-plugin"
-    source: git
-    version: "1.1.0"
+      name: unico_check
+      sha256: "157b6f5b5f4b9b7467a767aecaa6beed0cea9a2b79af3d8a5b5b918f7ea1dff6"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.3.0"
   universal_platform:
     dependency: transitive
     description:

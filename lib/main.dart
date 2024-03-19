@@ -84,8 +84,7 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   void onErrorUnico(UnicoError error) {
     logger.e('onErrorUnico - ${error.description}');
-    SnackbarUtil.showInfo(
-        context, 'Erro - Mantenha o celular em pé para validação Selfie');
+    SnackbarUtil.showInfo(context, 'onErrorUnico - ${error.description}');
   }
 
   @override
@@ -106,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage>
 
   /// Selfie callbacks
   @override
-  void onSuccessSelfie(CameraResult cameraResult) {
+  void onSuccessSelfie(ResultCamera cameraResult) {
     logger.i('onSuccessSelfie - Sucesso na validação');
     SnackbarUtil.showInfo(context, 'Sucesso na validação');
     setState(() {});
@@ -115,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   void onErrorSelfie(UnicoError error) {
     logger.e('onErrorSelfie - ${error.description}');
-    SnackbarUtil.showInfo(context, error.description);
+    SnackbarUtil.showInfo(context, 'onErrorSelfie - ${error.description}');
   }
 
   @override

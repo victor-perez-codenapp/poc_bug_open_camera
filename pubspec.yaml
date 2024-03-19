@@ -58,16 +58,17 @@ dependencies:
   file: ^7.0.0
   cross_file: ^0.3.3+4
   firebase_core_platform_interface: ^5.0.0
+  unico_check: 4.3.0
 
-  brscan_flutter:
-    git:
-      url: https://brscan-code-magic:bqyhlvbfhruusgtrfjkewyfqqj37p3yndznx7bn456sgcfo2bcqq@dev.azure.com/CodeNApp/Code%20n%20App/_git/brscan-flutter
-      ref: refactor
-
-  unico_check:
-    git:
-      url: https://unico-code-magic:bqyhlvbfhruusgtrfjkewyfqqj37p3yndznx7bn456sgcfo2bcqq@dev.azure.com/CodeNApp/Code%20n%20App/_git/unico-plugin
-      ref: documents
+#  brscan_flutter:
+#    git:
+#      url: https://brscan-code-magic:j7ayihyjrq23cksmubf6cxhhsunu5jvutvf6vspgi5qacravg76q@dev.azure.com/CodeNApp/Code%20n%20App/_git/brscan-flutter
+#      ref: refactor
+#
+#  unico_check:
+#    git:
+#      url: https://unico-code-magic:j7ayihyjrq23cksmubf6cxhhsunu5jvutvf6vspgi5qacravg76q@dev.azure.com/CodeNApp/Code%20n%20App/_git/unico-plugin
+#      ref: documents
 
   pdfx:
     git:
